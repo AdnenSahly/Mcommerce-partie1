@@ -112,6 +112,8 @@ public class ProductController {
         }
         return s;
     }
-
-
+@GetMapping("/Produits/trier")
+List<Product> trierProduitsParOrdreAlphabetique(){
+        return productDao.OrderByNom();
+}
 }
